@@ -1,18 +1,22 @@
 package PlayersGuideJava.Day36;
 
 public class RunRoomCoordinates {
-    public static void main(String[] args) {;
-        Coordinate coordinateNr1 = new Coordinate(0,0);
-        Coordinate coordinateNr2 = new Coordinate(0,2);
-        Coordinate coordinateNr3 = new Coordinate(1,0);
-        Coordinate coordinateNr4 = new Coordinate(1,2);
+    public static void main(String[] args) {
+        ;
+        Coordinate coordinateNr1 = new Coordinate(0, 0);
+//        Coordinate coordinateExtra = new Coordinate(0,2);
+        Coordinate coordinateNr2 = new Coordinate(0, 2);
+        Coordinate coordinateNr3 = new Coordinate(1, 0);
+        Coordinate coordinateNr4 = new Coordinate(1, 2);
+//        System.out.println(coordinateNr1.row());
+//        System.out.println(coordinateNr2.equals(coordinateExtra));
 
         System.out.println(Check.coordinatesConnected(coordinateNr1, coordinateNr2)); //output: false;
         System.out.println(Check.coordinatesConnected(coordinateNr2, coordinateNr3)); //output: false;
         System.out.println(Check.coordinatesConnected(coordinateNr1, coordinateNr3)); //output: true;
         System.out.println(Check.coordinatesConnected(coordinateNr4, coordinateNr2)); //output: true;
     }
-    
+
     /*
     Day 36 Challenge: Room Coordinates 50 XP
 
