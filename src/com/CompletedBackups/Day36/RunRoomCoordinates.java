@@ -1,8 +1,7 @@
-package PlayersGuideJava.Day36;
+package com.CompletedBackups.Day36;
 
 public class RunRoomCoordinates {
     public static void main(String[] args) {
-        ;
         Coordinate coordinateNr1 = new Coordinate(0, 0);
 //        Coordinate coordinateExtra = new Coordinate(0,2);
         Coordinate coordinateNr2 = new Coordinate(0, 2);

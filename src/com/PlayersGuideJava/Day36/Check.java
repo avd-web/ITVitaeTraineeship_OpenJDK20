@@ -1,4 +1,4 @@
-package PlayersGuideJava.Day36;
+package com.PlayersGuideJava.Day36;
 
 public class Check {
     public static boolean coordinatesConnected(Coordinate coordinate1, Coordinate coordinate2) {
