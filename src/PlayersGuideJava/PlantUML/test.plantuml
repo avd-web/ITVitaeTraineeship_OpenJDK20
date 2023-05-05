@@ -1,0 +1,11 @@
+@startuml
+
+class person{
++ methode
+}
+class person2{
++ methode
+}
+person *-> person2
+
+@enduml
