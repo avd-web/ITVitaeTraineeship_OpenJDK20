@@ -1,0 +1,72 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+class RunTheFountainOfObjects {
+createWorld()
+Round()
+}
+
+static class createWorld {
+static World createWorld()
+}
+
+class Player {
+moves : int
+position : room
+--
+void move();
+String playerInputScanner();
+}
+
+abstract Room {
+- name = name
+--
++ __init__(name)
++ int row;
++ int column;
+}
+
+class FountainRoom extends Room {
+hasFountain = true;
+isEmpty = false;
+}
+
+class EmptyRoom extends Room {
+hasFountain = false;
+isEmpty = true;
+}
+
+static class Round {
+void nextRound()
+}
+
+object EmptyRoom_Nr1
+object EmptyRoom_Nr2
+object EmptyRoom_Nr3
+object FountainRoom_Nr1
+object World
+
+
+RunTheFountainOfObjects *-> createWorld
+RunTheFountainOfObjects *-> Round
+Round --> Player
+createWorld *-> World
+World --> Room
+EmptyRoom <-- EmptyRoom_Nr1
+EmptyRoom <-- EmptyRoom_Nr2
+EmptyRoom <-- EmptyRoom_Nr3
+FountainRoom <-- FountainRoom_Nr1
+Player --> Room
+
+
+
+
+'object CapitalCity {
+' UK *-> London
+' USA *--> Washington
+' Germany *---> Berlin
+'}
+
+'NewYork --> CapitalCity::USA
+
+@enduml
