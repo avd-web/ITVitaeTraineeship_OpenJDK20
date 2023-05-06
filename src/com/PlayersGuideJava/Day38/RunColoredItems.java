@@ -1,10 +1,20 @@
 package com.PlayersGuideJava.Day38;
 
+import org.w3c.dom.html.HTMLTableColElement;
+
+import java.awt.*;
+
 public class RunColoredItems {
 
     public static void main(String[] args) {
-        ColoredItem<Sword> sword = new ColoredItem<>(new Sword(), ConsoleColors.GREEN);
+        ColoredItem<Sword> sword = new ColoredItem<>(new Sword(), "sword", ConsoleColors.GREEN);
         sword.display();
+
+        ColoredItem<Axe> axe = new ColoredItem<>(new Axe(), "axe", ConsoleColors.CYAN);
+        axe.display();
+
+        ColoredItem<Bow> bow = new ColoredItem<>(new Bow(), "bow", ConsoleColors.BLUE);
+        bow.display();
 
 //        ColoredItem<Sword> sword = new ColoredItem<>("green");
 //        sword.display();
