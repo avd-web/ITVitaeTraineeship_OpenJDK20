@@ -1,25 +1,53 @@
 package com.PlayersGuideJava.Day39till43;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class RunTheFountainOfObjects {
 
     public static void main(String[] args) {
 
-        //Create a new World of "Rooms" with a size, and fountain position input.
-        ArrayList<Room> field = new Field().createField(4,0,2);
-        //Create a player with a position of row 0 and column 0.
+        //create field and player
+        Room[][] field = Field.createField();
+        Player player1 = new Player();
+        Scanner scanner = new Scanner(System.in);
 
-        //Run a new round which ask the user for input and what to do next
-        Round.runRound();
+        String userInput;
 
-        field.movePlayer(north)
+        //check win conditions
+        do {
+            //ask for user input //test userInput
+            userInput = scanner.nextLine();
+
+            switch (userInput.toLowerCase().trim()) {
+                case "move north":
+                    player1.setColumn((player1.getColumnPosition() + 1));
+                    player1.setCurrentRoom(field[player1.getRowPosition()][player1.getColumnPosition()]);
+                    player1.runRoomAction();
+
+                    //runRoomAction(field[player1.getRow][player1.getColumn])
+                    break;
+                case "move south":
+                    player1.setColumn((player1.getColumnPosition() - 1));
+                    player1.setCurrentRoom(field[player1.getRowPosition()][player1.getColumnPosition()]);
+                    player1.runRoomAction();
+                    break;
+                case "move east":
+                    break;
+                case "move west":
+                    break;
+            }
+        }
+        while (!player1.isObjectivesCompleted() ||
+                (player1.getRowPosition() > 0) ||
+                (player1.getColumnPosition() > 0));
 
 
 
 
 
     }
+
 
     /*
     Pseudocode:
