@@ -1,11 +1,30 @@
 package com.PlayersGuideJava.Day39till43;
 
+import java.util.ArrayList;
+
 public class RunTheFountainOfObjects {
+
+    public static void main(String[] args) {
+
+        //Create a new World of "Rooms" with a size, and fountain position input.
+        ArrayList<Room> field = new Field().createField(4,0,2);
+        //Create a player with a position of row 0 and column 0.
+
+        //Run a new round which ask the user for input and what to do next
+        Round.runRound();
+
+        field.movePlayer(north)
+
+
+
+
+
+    }
 
     /*
     Pseudocode:
-    Create a new World of Rooms with size input
-    Create a player with a position of Room
+    Create a new World of "Rooms" with a size, and fountain position input.
+    Create a player with a position of row 0 and column 0.
     Loop Round function until win or lose {
         Ask player for movement
         Move player to different room
