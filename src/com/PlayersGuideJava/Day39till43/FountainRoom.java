@@ -4,17 +4,9 @@ public class FountainRoom extends Room {
 
     @Override
     public void action() {
+        System.out.println("test");
 
     }
 
 }
 
-//    public boolean hasFountain() {
-//        return true;
-//    }
-//
-//    public FountainRoom(int row, int column, int roomNumber){
-//        super(row, column, roomNumber);
-//
-//    }
-//}

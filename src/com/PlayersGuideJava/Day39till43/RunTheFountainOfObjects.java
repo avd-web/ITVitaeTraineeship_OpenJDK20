@@ -1,9 +1,12 @@
 package com.PlayersGuideJava.Day39till43;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class RunTheFountainOfObjects {
+
+    public static final int fieldSize = 4;
+    public static final int fountainRow = 0;
+    public static final int fountainColumn = 2;
 
     public static void main(String[] args) {
 
@@ -12,46 +15,44 @@ public class RunTheFountainOfObjects {
         Player player1 = new Player();
         Scanner scanner = new Scanner(System.in);
 
-        String userInput;
-
         //check win conditions
         do {
-            //ask for user input //test userInput
-            userInput = scanner.nextLine();
-
+            //run menu and return user Input as a string.
+            String userInput = Menu.menu();
             switch (userInput.toLowerCase().trim()) {
-                case "move north":
+                case "move north" -> {
                     player1.setColumn((player1.getColumnPosition() + 1));
                     player1.setCurrentRoom(field[player1.getRowPosition()][player1.getColumnPosition()]);
-                    player1.runRoomAction();
 
-                    //runRoomAction(field[player1.getRow][player1.getColumn])
-                    break;
-                case "move south":
+                    player1.runRoomAction();
+                }
+                case "move south" -> {
                     player1.setColumn((player1.getColumnPosition() - 1));
                     player1.setCurrentRoom(field[player1.getRowPosition()][player1.getColumnPosition()]);
                     player1.runRoomAction();
-                    break;
-                case "move east":
-                    break;
-                case "move west":
-                    break;
+                }
+                case "move east" -> {
+                    player1.setRow((player1.getColumnPosition() + 1));
+                    player1.setCurrentRoom(field[player1.getRowPosition()][player1.getColumnPosition()]);
+                    player1.runRoomAction();
+                }
+                case "move west" -> {
+                    player1.setRow((player1.getColumnPosition() - 1));
+                    player1.setCurrentRoom(field[player1.getRowPosition()][player1.getColumnPosition()]);
+                    player1.runRoomAction();
+                }
             }
         }
         while (!player1.isObjectivesCompleted() ||
                 (player1.getRowPosition() > 0) ||
                 (player1.getColumnPosition() > 0));
 
-
-
-
-
     }
 
 
     /*
     Pseudocode:
-    Create a new World of "Rooms" with a size, and fountain position input.
+    Create a new World of two-dimensional array of Room with a size, and fountain position input.
     Create a player with a position of row 0 and column 0.
     Loop Round function until win or lose {
         Ask player for movement

@@ -3,9 +3,10 @@ package com.PlayersGuideJava.Day39till43;
 public class Field {
 
     public static Room[][] createField() {
-        int fieldSize = 4;
-        int fountainRow = 0;
-        int fountainColumn = 2;
+        int fieldSize = RunTheFountainOfObjects.fieldSize;
+        int fountainRow = RunTheFountainOfObjects.fountainRow;
+        int fountainColumn = RunTheFountainOfObjects.fountainColumn;
+
         Room[][] field = new Room[fieldSize][fieldSize];
 
         for (int i = 0; i <= (fieldSize - 1); i++) {

@@ -26,6 +26,10 @@ public class Player {
     }
 
     public void setRow(int row) {
+        if (this.row >= RunTheFountainOfObjects.fieldSize || this.row <= 0){
+            System.out.println("I can't move in that direction");
+            return;
+        }
         this.row = row;
     }
 
@@ -34,6 +38,10 @@ public class Player {
     }
 
     public void setColumn(int column) {
+        if (this.column >= RunTheFountainOfObjects.fieldSize  || this.column <= 0){
+            System.out.println("I can't move in that direction");
+            return;
+        }
         this.column = column;
     }
 
@@ -53,34 +61,3 @@ public class Player {
         this.currentRoom = currentRoom;
     }
 }
-
-//    private int rowPosition;
-//    private int columnPosition;
-//
-//    private Room currentRoom;
-//
-//    public Player(){
-//        this.rowPosition = 0;
-//        this.columnPosition = 0;
-//    }
-//
-//    public int getRowPosition() {
-//        return rowPosition;
-//    }
-//
-//    public void setRowPosition(int rowPosition) {
-//        this.rowPosition = rowPosition;
-//    }
-//
-//    public int getColumnPosition() {
-//        return columnPosition;
-//    }
-//
-//    public void setColumnPosition(int columnPosition) {
-//        this.columnPosition = columnPosition;
-//    }
-//
-//    public void setCurrentRoom(Room currentRoom) {
-//        this.currentRoom = currentRoom;
-//    }
-//}
