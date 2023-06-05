@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class RunTheFountainOfObjects {
 
-    public static final int fieldSize = 4;
+    public static final int fieldSize = FieldSizeScanner.ScanFieldSize();
     public static final int fountainRow = 0;
     public static final int fountainColumn = 2;
 

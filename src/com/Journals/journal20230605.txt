@@ -6,8 +6,11 @@ Journal Day 2023-06-05
 11:47 > : Continue PGJ-Day39 + Commit small bugfix to GitHub.
 12:30 : fixing and completing Day 39
 14:16 : fixing IDE errors "javac is not recognized as the name of a cmdlet"
-14:48 SOLVED (java JDK path was destroyed by microsoft onedrive)
-15:01 SOLVED - Couldn't run the program via terminal (something wrong with path/package)
+14:48 : PROBLEM : JDK BROKEN
+- SOLVED (java JDK path was destroyed by microsoft onedrive)
+15:01 : PROBLEM : Couldn't run the program via terminal (something wrong with path/package)
+- SOLVED (Path and package compiling can be weird.)
+15:22 : Start @ Day40
 
 
 
