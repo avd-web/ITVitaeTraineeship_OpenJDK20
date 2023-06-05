@@ -26,13 +26,13 @@ public class Menu {
         Scanner scanner = new Scanner(System.in);
         do {
             System.out.println("What do you want to do? ");
-            System.out.println(Arrays.toString(possibleInputs.values()).toLowerCase().replaceAll("_", " "));
+            System.out.println(Arrays.toString(possibleInputs.values()).toLowerCase().replaceAll("_", " ") + "\033[0;36m");
             String userInput = scanner.nextLine();
             if (possibleInputs.loopOverValues(userInput)){
                 return userInput;
             }
             else {
-                System.out.println("That is not an option, try again: ");
+                System.out.println("\033[0mThat is not an option, try again: ");
                 scanner.nextLine();
             }
         } while (true);

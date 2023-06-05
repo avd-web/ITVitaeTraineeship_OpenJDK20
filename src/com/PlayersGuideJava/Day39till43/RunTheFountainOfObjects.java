@@ -13,17 +13,24 @@ public class RunTheFountainOfObjects {
         //create field and player
         Room[][] field = Field.createField();
         Player player1 = new Player();
+
+        System.out.println("\033[0;35mYou entered a dark cavern and the door behind you closes, leaving you in complete darkness.\033[0m");
+
         Scanner scanner = new Scanner(System.in);
 
         //check win conditions
         do {
+            if (player1.getRowPosition() == 0 && player1.getColumnPosition() == 0){
+                System.out.println("\033[0;33mYou see light in this room coming from outside the cavern. This is the entrance.\033[0m");
+
+            }
+
             //run menu and return user Input as a string.
             String userInput = Menu.menu();
             switch (userInput.toLowerCase().trim()) {
                 case "move north" -> {
                     player1.setColumn((player1.getColumnPosition() + 1));
                     player1.setCurrentRoom(field[player1.getRowPosition()][player1.getColumnPosition()]);
-
                     player1.runRoomAction();
                 }
                 case "move south" -> {
@@ -41,11 +48,22 @@ public class RunTheFountainOfObjects {
                     player1.setCurrentRoom(field[player1.getRowPosition()][player1.getColumnPosition()]);
                     player1.runRoomAction();
                 }
+                case "activate" -> {
+                    if (player1.getCurrentRoom() instanceof FountainRoom ){
+                        player1.setObjectivesCompleted(true);
+                        System.out.println("\033[0;34mYou hear the rushing waters from the Fountain of Objects. It has been reactivated\033[0m");
+                    }
+                    else {
+                        System.out.println("Nothing to activate in this room.");
+                    }
+                }
             }
         }
         while (!player1.isObjectivesCompleted() ||
                 (player1.getRowPosition() > 0) ||
                 (player1.getColumnPosition() > 0));
+
+        System.out.println("Congratulations you escaped!");
 
     }
 

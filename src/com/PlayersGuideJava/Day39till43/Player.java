@@ -15,9 +15,6 @@ public class Player {
     }
 
     public void runRoomAction(){
-        if (currentRoom instanceof FountainRoom){
-            objectivesCompleted = true;
-        }
         this.currentRoom.action();
     }
 
@@ -26,7 +23,7 @@ public class Player {
     }
 
     public void setRow(int row) {
-        if (this.row >= RunTheFountainOfObjects.fieldSize || this.row < 0){
+        if (row >= RunTheFountainOfObjects.fieldSize || row < 0){
             System.out.println("I can't move in that direction");
             return;
         }
@@ -38,7 +35,7 @@ public class Player {
     }
 
     public void setColumn(int column) {
-        if (this.column >= RunTheFountainOfObjects.fieldSize  || this.column < 0){
+        if (column >= RunTheFountainOfObjects.fieldSize  || column < 0){
             System.out.println("I can't move in that direction");
             return;
         }
