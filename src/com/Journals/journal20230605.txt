@@ -1,5 +1,6 @@
 Journal Day 2023-06-05
 
+Start day @ 10:00
 < 11:01 : Preparing for workweek after holiday & small bugfix PGJ-Day39 ->
 11:02 > 11:05 : break ->
 11:30 > 11:46 : Consultation with Alexander about PGJ-Day35/36/37/38
@@ -10,7 +11,11 @@ Journal Day 2023-06-05
 - SOLVED (java JDK path was destroyed by microsoft onedrive)
 15:01 : PROBLEM : Couldn't run the program via terminal (something wrong with path/package)
 - SOLVED (Path and package compiling can be weird.)
-15:22 : Start @ Day40
+15:22 : Start @ Day40 1/2 - finished
+15:52 : Start @ Day40 2/2
+End day @ 16:00
+
+
 
 
 

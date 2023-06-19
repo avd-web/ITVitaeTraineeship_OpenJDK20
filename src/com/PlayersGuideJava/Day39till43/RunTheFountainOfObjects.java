@@ -3,10 +3,10 @@ package com.PlayersGuideJava.Day39till43;
 import java.util.Scanner;
 
 public class RunTheFountainOfObjects {
-
-    public static final int fieldSize = FieldSizeScanner.ScanFieldSize();
-    public static final int fountainRow = 0;
-    public static final int fountainColumn = 2;
+    public static final int fieldSizeInput = FieldSizeScanner.ScanFieldSize();
+    public static final int fieldSize = fieldSizeInput;
+    public static final int fountainRow = (fieldSize/2);
+    public static final int fountainColumn = (fieldSize/2);
 
     public static void main(String[] args) {
 
@@ -15,6 +15,7 @@ public class RunTheFountainOfObjects {
         Player player1 = new Player();
 
         System.out.println("\033[0;35mYou entered a dark cavern and the door behind you closes, leaving you in complete darkness.\033[0m");
+        System.out.println("column: " + fountainColumn + ", row: " + fountainRow);
 
         Scanner scanner = new Scanner(System.in);
 
@@ -39,12 +40,12 @@ public class RunTheFountainOfObjects {
                     player1.runRoomAction();
                 }
                 case "move east" -> {
-                    player1.setRow((player1.getColumnPosition() + 1));
+                    player1.setRow((player1.getRowPosition() + 1));
                     player1.setCurrentRoom(field[player1.getRowPosition()][player1.getColumnPosition()]);
                     player1.runRoomAction();
                 }
                 case "move west" -> {
-                    player1.setRow((player1.getColumnPosition() - 1));
+                    player1.setRow((player1.getRowPosition() - 1));
                     player1.setCurrentRoom(field[player1.getRowPosition()][player1.getColumnPosition()]);
                     player1.runRoomAction();
                 }
