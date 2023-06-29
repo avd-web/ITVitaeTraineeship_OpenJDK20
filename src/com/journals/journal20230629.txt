@@ -1,0 +1,34 @@
+Journal Day 2023-06-23
+
+//TO DO :
+    // FIX(DONE)ME rewrite OOP structure for player.java and (field.java)NOW dungeon.java.
+    // FIXME the way the text-colours are implemented because I don't like how messy the result is and its f'ing up my code.
+    // FIXME change the way the field is created by asking the playing for small, medium or large instead of a field size? Or what is more fun to do?
+    // TODO think about how to randomly assign the type of rooms to the field size chosen by the player.
+
+Start day @ 11:00
+------------START ---------------------------------------------------------------------------------------------------------
+< 11:01 : introduction class + preparing workspace ->
+11:02 > : bugfixing the problem where the player can activate outside room (peer/code-review)
+- SOLVED Problem did not exist? Problem is non-existent.
+11:02 > T
+        wat is "class ColorItem <T>" doing?
+        wat is a generic class in java? search for explanation
+        brainstorm for implementing the coloring function
+11:36 > : 15 min break
+11:52 > : random thoughts about the best implementation for to do and fix me, "way of implementing TO DO lists: "
+12:00 > : removing colour implementation as is.
+            + renaming packages of projects
+12:35 > : break
+13:00 > : code review (CLASS)
+14:00 > : continue to do lists, completely rewrite code structure day 39+40, massive overhaul.
+15:30 > : overhaul completed, result=good, commit+push=V2
+
+
+
+
+
+
+
+
+
