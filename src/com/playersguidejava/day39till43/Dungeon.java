@@ -47,8 +47,6 @@ public class Dungeon {
         return dungeon;
     }
 
-
-
     public Dungeon() {
         this.DUNGEON = fillDungeon();
     }

@@ -19,18 +19,14 @@ public class Player {
         do {
             String userInput = Menu.menu();
             switch (userInput.toLowerCase().trim()) {
-                case "move north" -> {
+                case "move north" ->
                     setColumn((column + 1));
-                }
-                case "move south" -> {
+                case "move south" ->
                     setColumn((column - 1));
-                }
-                case "move east" -> {
+                case "move east" ->
                     setRow((row + 1));
-                }
-                case "move west" -> {
+                case "move west" ->
                     setRow((row - 1));
-                }
                 case "activate" -> {
                     if (this.getCurrentRoom() instanceof FountainRoom ){
                         this.setObjectivesCompleted(true);
