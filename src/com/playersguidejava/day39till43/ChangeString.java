@@ -1,6 +1,6 @@
 package com.playersguidejava.day39till43;
 
-public class changeString {
+public class ChangeString {
 
     /*
 Use different colors to display the different types of text in the console window.
@@ -11,7 +11,7 @@ text describing entrance light in yellow,
 messages about the fountain in blue.
  */
 
-    enum color {
+    public enum color {
         PURPLE("\033[0;35m"),
         WHITE("\033[0;37m"),
         GREEN("\033[0;32m"),
@@ -34,26 +34,6 @@ messages about the fountain in blue.
         }
 
     }
-
-//    public static String colorPurple(String input) {
-//        return "\\e[0;35m" + input + "\\e[0m";
-//    }
-//
-//    public static String colorWhite(String input) {
-//        return "\\e[0;35m" + input + "\\e[0m";
-//    }
-//
-//    public static String colorGreen(String input) {
-//        return "\\e[0;35m" + input + "\\e[0m";
-//    }
-//
-//    public static String colorYellow(String input) {
-//        return "\\e[0;35m" + input + "\\e[0m";
-//    }
-//
-//    public static String colorBlue(String input) {
-//        return "\\e[0;35m" + input + "\\e[0m";
-//    }
 }
 
 

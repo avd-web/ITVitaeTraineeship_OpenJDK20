@@ -4,11 +4,9 @@ public class RunTheFountainOfObjects {
 
     public static void main(String[] args) {
 
-        Player player1 = new Player();
+        Player player1 = new Player(0,0);
         player1.introduction();
         player1.checkWin();
-
-
     }
 
     /*
