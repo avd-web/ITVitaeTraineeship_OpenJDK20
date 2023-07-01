@@ -1,4 +1,6 @@
-package com.playersguidejava.day39till43;
+package com.playersguidejava.day39till43.rooms;
+
+import com.playersguidejava.day39till43.rooms.Room;
 
 public class FountainRoom extends Room {
 

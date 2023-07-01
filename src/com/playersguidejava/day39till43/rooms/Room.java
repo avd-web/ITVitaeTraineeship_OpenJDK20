@@ -1,4 +1,4 @@
-package com.playersguidejava.day39till43;
+package com.playersguidejava.day39till43.rooms;
 
 public abstract class Room {
 

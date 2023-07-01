@@ -1,5 +1,8 @@
 package com.playersguidejava.day39till43;
 
+import com.playersguidejava.day39till43.rooms.FountainRoom;
+import com.playersguidejava.day39till43.rooms.Room;
+
 public class Player {
 
     private int row = 0;
@@ -9,7 +12,7 @@ public class Player {
     private Room currentRoom = DUNGEON.getRoom(row, column);
 
     public void introduction(){
-        System.out.println("You entered a dark cavern and the door behind you closes, leaving you in complete darkness.");
+        System.out.println(changeString.color.PURPLE.toString("You entered a dark cavern and the door behind you closes, leaving you in complete darkness."));
         System.out.println("column: " + DUNGEON.getFOUNTAIN_COLUMN() + ", row: " + DUNGEON.getFOUNTAIN_ROW());
     }
 
@@ -28,7 +31,7 @@ public class Player {
                 case "move west" ->
                     setRow((row - 1));
                 case "activate" -> {
-                    if (this.getCurrentRoom() instanceof FountainRoom ){
+                    if (this.getCurrentRoom() instanceof FountainRoom){
                         this.setObjectivesCompleted(true);
                         System.out.println("You hear the rushing waters from the Fountain of Objects. It has been reactivated");
                     }
