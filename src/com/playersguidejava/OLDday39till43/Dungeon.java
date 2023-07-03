@@ -1,8 +1,8 @@
-package com.playersguidejava.day39till43;
+package com.playersguidejava.OLDday39till43;
 
-import com.playersguidejava.day39till43.rooms.EmptyRoom;
-import com.playersguidejava.day39till43.rooms.FountainRoom;
-import com.playersguidejava.day39till43.rooms.Room;
+import com.playersguidejava.OLDday39till43.rooms.EmptyRoom;
+import com.playersguidejava.OLDday39till43.rooms.FountainRoom;
+import com.playersguidejava.OLDday39till43.rooms.Room;
 
 import java.util.Scanner;
 

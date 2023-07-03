@@ -1,6 +1,6 @@
-package com.playersguidejava.day39till43.rooms;
+package com.playersguidejava.OLDday39till43.rooms;
 
-import com.playersguidejava.day39till43.ChangeString;
+import com.playersguidejava.OLDday39till43.ChangeString;
 
 public class FountainRoom extends Room {
 

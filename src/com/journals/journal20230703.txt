@@ -1,0 +1,26 @@
+Journal Day 2023-06-23
+
+//TO DO :
+    // FINISHED completely redo the structure of the program, and implement a way to know if a pitField is nearby.
+    // think about how to randomly assign the type of rooms to the field size chosen by the player.
+
+
+Start day @ 11:00 DURING CLASS
+------------START ---------------------------------------------------------------------------------------------------------
+11:00 > : redo and implemented the pitField logic.
+12:00 : break
+12:15 > : continue
+14:30 > : finished
+
+
+------------END -----------------------------------------------------------------------------------------------------------
+End of day @ 16:00
+
+
+
+
+
+
+
+
+

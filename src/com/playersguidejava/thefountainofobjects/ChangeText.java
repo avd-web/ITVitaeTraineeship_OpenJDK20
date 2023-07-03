@@ -1,15 +1,6 @@
-package com.playersguidejava.day39till43;
+package com.playersguidejava.thefountainofobjects;
 
-public class ChangeString {
-
-    /*
-Use different colors to display the different types of text in the console window.
-For example, narrative items (intro,ending, etc.) may be magenta,
-descriptive text in white,
-input from the user in (CHANGED) GREEN,
-text describing entrance light in yellow,
-messages about the fountain in blue.
- */
+public class ChangeText {
 
     public enum color {
         PURPLE("\033[0;35m"),
@@ -34,6 +25,5 @@ messages about the fountain in blue.
         }
 
     }
+
 }
-
-

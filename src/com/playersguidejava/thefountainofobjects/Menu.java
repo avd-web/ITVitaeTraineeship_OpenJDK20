@@ -1,4 +1,4 @@
-package com.playersguidejava.day39till43;
+package com.playersguidejava.thefountainofobjects;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -25,8 +25,8 @@ public class Menu {
     public static String menu(){
         Scanner scanner = new Scanner(System.in);
         do {
-            System.out.print("-------- CHOOSE ACTION ------------------\n" + "What do you want to do? > ");
-            System.out.println(Arrays.toString(possibleInputs.values()).toLowerCase().replaceAll("_", " ") + ": ");
+            System.out.print("-------- CHOOSE ACTION ------------------\n" + "What do you want to do?\n");
+            System.out.println("Options: " + Arrays.toString(possibleInputs.values()).toLowerCase().replaceAll("_", " ") + ": ");
             String userInput = scanner.nextLine();
             if (possibleInputs.loopOverValues(userInput)){
                 return userInput;
